@@ -37532,56 +37532,33 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var Example = function (_Component) {
-    _inherits(Example, _Component);
+var CinemaApp = function (_Component) {
+    _inherits(CinemaApp, _Component);
 
-    function Example() {
-        _classCallCheck(this, Example);
+    function CinemaApp() {
+        _classCallCheck(this, CinemaApp);
 
-        return _possibleConstructorReturn(this, (Example.__proto__ || Object.getPrototypeOf(Example)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (CinemaApp.__proto__ || Object.getPrototypeOf(CinemaApp)).apply(this, arguments));
     }
 
-    _createClass(Example, [{
+    _createClass(CinemaApp, [{
         key: 'render',
         value: function render() {
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
-                { className: 'container' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'row justify-content-center' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'col-md-8' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'card' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'card-header' },
-                                'Example Component'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'card-body' },
-                                'I\'m an example component!'
-                            )
-                        )
-                    )
-                )
+                null,
+                'CinemaApp'
             );
         }
     }]);
 
-    return Example;
+    return CinemaApp;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (Example);
+/* harmony default export */ __webpack_exports__["default"] = (CinemaApp);
 
 
-if (document.getElementById('example')) {
-    __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Example, null), document.getElementById('example'));
-}
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(CinemaApp, null), document.getElementById('cinemaApp'));
 
 /***/ }),
 /* 41 */
