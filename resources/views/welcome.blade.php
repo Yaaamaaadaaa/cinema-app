@@ -19,13 +19,20 @@
     </div>
     <nav>
       <div class="nav-wrapper red accent-4">
-        <a href="" class="brand-logo">ララベルリアクト シネマワールド</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="">上映スケジュール</a></li>
-          <li><a href="">上映作品</a></li>
+        <a href="#" class="brand-logo white-space:nowrap">ララベル シネマワールド</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger">menu</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">上映スケジュール</a></li>
+          <li><a href="#">上映作品</a></li>
         </ul>
       </div>
     </nav>
+
+    <ul class="sidenav black" id="mobile-demo">
+      <li><a href="#" class="white-text red accent-4">上映スケジュール</a></li>
+      <li><a href="#" class="white-text red accent-4">上映作品</a></li>
+    </ul>
+
     <h4 class="white-text">公開中の作品一覧</h4>
     @foreach($movies as $movie)
       <div class="row">
@@ -46,7 +53,7 @@
   </div>
 
   <!-- JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="{{ asset('js/app.js')}}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>

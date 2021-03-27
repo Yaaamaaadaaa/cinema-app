@@ -15,6 +15,7 @@ class CinemaController extends Controller
     public function index()
     {
         $movies = Movie::all();
+        
         return view('welcome', [
           'movies'=>$movies,
         ]);

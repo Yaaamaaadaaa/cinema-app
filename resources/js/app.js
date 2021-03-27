@@ -14,3 +14,8 @@ require('./bootstrap');
  */
 
 require('./components/CinemaApp');
+
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+       

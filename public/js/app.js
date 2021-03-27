@@ -1855,6 +1855,10 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! ./components/CinemaApp */ "./resources/js/components/CinemaApp.js");
 
+$(document).ready(function () {
+  $('.sidenav').sidenav();
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
