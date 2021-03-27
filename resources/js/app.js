@@ -13,4 +13,9 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-require('./components/Example');
+require('./components/CinemaApp');
+
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+       
