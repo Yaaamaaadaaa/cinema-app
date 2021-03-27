@@ -11,6 +11,4 @@
 |
 */
 
-Route::get('/{any}', function(){
-    return view('welcome');
-})->where('any','.*');
+Route::get('/', 'CinemaController@index')->name('cinemas.index');
