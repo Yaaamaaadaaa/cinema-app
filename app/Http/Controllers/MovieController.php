@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Movie;
 
-class CinemaController extends Controller
+class MovieController extends Controller
 {
     public function getMovies()
     {
