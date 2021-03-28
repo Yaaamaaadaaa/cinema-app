@@ -11,4 +11,4 @@
 |
 */
 
-Route::get('/', 'CinemaController@index')->name('cinemas.index');
+Route::get('/', 'MovieController@index')->name('movies.index');
