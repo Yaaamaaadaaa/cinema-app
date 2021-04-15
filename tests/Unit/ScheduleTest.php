@@ -15,22 +15,6 @@ class ScheduleTest extends TestCase
         parent::setUp();
 
         $this->seed('MoviesTableSeeder');
-    }
-
-    /**
-     * Scheduleモデルのバリデーションテスト
-     *
-     * @test
-     */
-    public function add_invalid_theater_number()
-    {
-        $request  = new ScheduleRequest();
-        $rules    = $request->rules();
-        $dataList = [$schedule->theater_number => 0];
-
-        $validator = Validator::make($dataList, $rules);
-        $result    = $validator->passes();
-
-        $this->assertEquals('faluse', $result);
+        $this->seed('SchedulesTableSeeder');
     }
 }
