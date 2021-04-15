@@ -12,8 +12,6 @@ class MoviesTableSeeder extends Seeder
      */
     public function run()
     {
-        $movie = DB::table('movies')->first();
-
         $titles = ['シン・エヴァンゲリオン劇場版', 'ラーヤと龍の王国(吹替)', 'ミッドナイトスワン'];
         $details = ['さらば、全てのエヴァンゲリオン', 'いま、世界の運命は彼女の手に', '世界で一番美しいラブストーリー'];
 
