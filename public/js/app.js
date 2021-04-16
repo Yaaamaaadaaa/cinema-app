@@ -1857,6 +1857,9 @@ __webpack_require__(/*! ./components/CinemaApp */ "./resources/js/components/Cin
 
 $(document).ready(function () {
   $('.sidenav').sidenav();
+  $('.dropdown-trigger').dropdown({
+    coverTrigger: false
+  });
 });
 
 /***/ }),

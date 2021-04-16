@@ -43,9 +43,12 @@
               <p>{{ $movie->detail}}</p>
               <p>上映時間:{{ substr($movie->running_time, 0, 5) }}
             </div>
-            <div class="card-action">
-              <a href="#">上映時間を見る</a>
-         　　</div>
+            <a class='dropdown-trigger btn' data-target='dropdown1'>上映時間を見る</a>
+            
+            <ul id='dropdown1' class='dropdown-content black'>
+              <li class="card black"><a class="white-text">one</a></li>
+            </ul>
+
           </div>
         </div>
       </div>
