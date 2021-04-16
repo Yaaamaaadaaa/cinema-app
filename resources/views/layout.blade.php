@@ -15,7 +15,6 @@
 <body>
   <div id="app" class="black">
     <div class="container">
-      <div id="cinemaApp"></div>
     </div>
     <nav>
       <div class="nav-wrapper red accent-4">
