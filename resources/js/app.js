@@ -17,5 +17,7 @@ require('./components/CinemaApp');
 
 $(document).ready(function(){
     $('.sidenav').sidenav();
+    $('.dropdown-trigger').dropdown({
+      coverTrigger: false,
+    });
   });
-       
