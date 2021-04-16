@@ -19,8 +19,8 @@
     </div>
     <nav>
       <div class="nav-wrapper red accent-4">
-        <a href="#" class="brand-logo white-space:nowrap">ララベル シネマワールド</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger">menu</a>
+        <a href="/" class="brand-logo white-space:nowrap">ララベル シネマワールド</a>
+        <a href="#" data-target="mobile-menu" class="sidenav-trigger">menu</a>
         <ul class="right hide-on-med-and-down">
           <li><a href="#">上映スケジュール</a></li>
           <li><a href="#">上映作品</a></li>
@@ -28,7 +28,7 @@
       </div>
     </nav>
 
-    <ul class="sidenav black" id="mobile-demo">
+    <ul class="sidenav black" id="mobile-menu">
       <li><a href="#" class="white-text red accent-4">上映スケジュール</a></li>
       <li><a href="#" class="white-text red accent-4">上映作品</a></li>
     </ul>
@@ -41,12 +41,18 @@
             <div class="card-content white-text">
               <span class="card-title">{{ $movie->title }}</span>
               <p>{{ $movie->detail}}</p>
-              <p>上映時間:{{ substr($movie->running_time, 0, 5) }}
+              <p>上映時間:{{ substr($movie->running_time, 0, 5) }}</p>
             </div>
             <a class='dropdown-trigger btn' data-target='dropdown1'>上映時間を見る</a>
             
             <ul id='dropdown1' class='dropdown-content black'>
-              <li class="card black"><a class="white-text">one</a></li>
+              @foreach($movie->schedules as $schedule)
+                <li class="card black">
+                  <a class="white-text">
+                    {{ substr($schedule->start_time, 0, 5) }}〜<span class="yellow-text" style="float: right;">購入　></span>
+                  </a>
+                </li>
+              @endforeach
             </ul>
 
           </div>
