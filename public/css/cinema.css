@@ -1,0 +1,41 @@
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.screen {
+  background: #808080;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.seat {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 8px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 30px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: center;
+  width: 21px;
+}
+.null-seat {
+  opacity: 0.0;
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 8px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 30px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: center;
+  width: 21px;
+}
