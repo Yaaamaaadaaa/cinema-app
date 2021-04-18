@@ -14,8 +14,6 @@
 
 <body>
   <div id="app" class="black">
-    <div class="container">
-    </div>
     <nav>
       <div class="nav-wrapper red accent-4">
         <a href="/" class="brand-logo white-space:nowrap">ララベル シネマワールド</a>
