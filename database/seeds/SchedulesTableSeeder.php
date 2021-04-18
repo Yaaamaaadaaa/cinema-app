@@ -15,7 +15,7 @@ class SchedulesTableSeeder extends Seeder
     {
         $movies = DB::table('movies')->get();
 
-        $theater_numbers = [1, 1, 6];
+        $theater_numbers = [1, 2, 6];
         $start_times = ['11:00', '13:30', '15:00'];
 
         foreach ($movies as $movie) {
