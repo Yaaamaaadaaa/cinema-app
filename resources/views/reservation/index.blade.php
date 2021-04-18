@@ -1,6 +1,9 @@
 @extends('layout')
 
 @section('content')
-  <h1>hello world</h1>
-  <div id="cinemaApp"></div>
+  <div class="container">
+    <h1>hello world</h1>
+    <div id="cinemaApp"></div>
+  </div>
+
 @endsection

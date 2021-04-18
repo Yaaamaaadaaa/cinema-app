@@ -8,5 +8,6 @@ export default class CinemaApp extends Component {
         );
     }
 }
-
-ReactDOM.render(<CinemaApp />, document.getElementById('cinemaApp'));
+if (document.getElementById('cinemaApp')) {
+  ReactDOM.render(<CinemaApp />, document.getElementById('cinemaApp'));
+}
