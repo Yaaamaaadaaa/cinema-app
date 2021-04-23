@@ -1,3 +1,6 @@
+.board-row {
+    display:inline-flex;
+}
 .board-row:after {
   clear: both;
   content: "";

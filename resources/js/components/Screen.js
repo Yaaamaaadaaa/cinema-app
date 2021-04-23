@@ -19,7 +19,7 @@ export default class Screen extends React.Component {
 
     render() {
       
-      const status = 'SCREEN2';
+      const status = "SCREEN2";
 
       return (
         <div>

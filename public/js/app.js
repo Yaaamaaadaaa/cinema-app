@@ -2068,7 +2068,7 @@ var Screen = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var status = 'SCREEN2';
+      var status = "SCREEN2";
       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
           className: "screen",
