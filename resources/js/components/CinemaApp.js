@@ -6,13 +6,26 @@ export default class CinemaApp extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selects: Array(5).fill(null),
+      selects: [],
     };
   }
 
   handleClick(i) {
     const selects = this.state.selects.slice();
-    selects.unshift(i);
+    if (selects.some((element) => element === i)) {
+      const index = selects.findIndex((element) => element === i);
+      selects.splice(index, 1);
+    } else if (selects.length >= 5) {
+      return true;
+    } else {
+      selects.push(i);
+    }
+    this.setState({selects: selects});
+  }
+
+  resetSelects() {
+    const selects = this.state.selects.slice();
+    selects.splice(0);
     this.setState({selects: selects});
   }
 
@@ -20,13 +33,10 @@ export default class CinemaApp extends Component {
       return (
         <div className="reservation">
           <div>座席の指定</div>
-            <Screen 
-              onClick={(i) => this.handleClick(i)}
-            />
+          <Screen onClick={(i) => this.handleClick(i)} />
           <div>選択中の座席</div>
-            <Selects 
-              number={this.state.selects}
-            />
+          <Selects number={this.state.selects} />
+          <button onClick={() => this.resetSelects() }>リセット</button>
         </div>
         );
     }

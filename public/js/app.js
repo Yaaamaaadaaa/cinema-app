@@ -1976,7 +1976,7 @@ var CinemaApp = /*#__PURE__*/function (_Component) {
 
     _this = _super.call(this, props);
     _this.state = {
-      selects: Array(5).fill(null)
+      selects: []
     };
     return _this;
   }
@@ -1985,7 +1985,29 @@ var CinemaApp = /*#__PURE__*/function (_Component) {
     key: "handleClick",
     value: function handleClick(i) {
       var selects = this.state.selects.slice();
-      selects.unshift(i);
+
+      if (selects.some(function (element) {
+        return element === i;
+      })) {
+        var index = selects.findIndex(function (element) {
+          return element === i;
+        });
+        selects.splice(index, 1);
+      } else if (selects.length >= 5) {
+        return true;
+      } else {
+        selects.push(i);
+      }
+
+      this.setState({
+        selects: selects
+      });
+    }
+  }, {
+    key: "resetSelects",
+    value: function resetSelects() {
+      var selects = this.state.selects.slice();
+      selects.splice(0);
       this.setState({
         selects: selects
       });
@@ -2007,6 +2029,11 @@ var CinemaApp = /*#__PURE__*/function (_Component) {
           children: "\u9078\u629E\u4E2D\u306E\u5EA7\u5E2D"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(Selects, {
           number: this.state.selects
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+          onClick: function onClick() {
+            return _this2.resetSelects();
+          },
+          children: "\u30EA\u30BB\u30C3\u30C8"
         })]
       });
     }
