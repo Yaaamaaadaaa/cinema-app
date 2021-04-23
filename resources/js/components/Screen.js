@@ -1,11 +1,11 @@
 import React from 'react'
-import Seat from './Seat'
 
 export default class Screen extends React.Component {
     renderSeat(i) {
         return (
           <Seat
-          number={i}
+            number={i}
+            onClick={() => this.props.onClick(i)}
           />
         );
       }
@@ -199,4 +199,15 @@ export default class Screen extends React.Component {
         </div>
       );
     }
+}
+
+function Seat(props) {
+  return (
+    <button
+      className="seat"
+      onClick={props.onClick}
+    >
+      {props.number}
+    </button>
+  );
 }
