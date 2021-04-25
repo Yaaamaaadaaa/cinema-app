@@ -33,9 +33,14 @@ export default class CinemaApp extends Component {
       return (
         <div className="reservation">
           <div>座席の指定</div>
-          <Screen onClick={(i) => this.handleClick(i)} />
+          <Screen
+            onClick={(i) => this.handleClick(i)}
+            selects={this.state.selects}
+          />
           <div>選択中の座席</div>
-          <Selects number={this.state.selects} />
+          <Selects
+            number={this.state.selects}
+          />
           <button onClick={() => this.resetSelects() }>リセット</button>
         </div>
         );
