@@ -42,6 +42,7 @@ export default class CinemaApp extends Component {
             number={this.state.selects}
           />
           <button onClick={() => this.resetSelects() }>リセット</button>
+          <button>次へ</button>
         </div>
         );
     }

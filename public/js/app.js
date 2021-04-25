@@ -2035,6 +2035,8 @@ var CinemaApp = /*#__PURE__*/function (_Component) {
             return _this2.resetSelects();
           },
           children: "\u30EA\u30BB\u30C3\u30C8"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+          children: "\u6B21\u3078"
         })]
       });
     }
