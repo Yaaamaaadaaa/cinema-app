@@ -17,7 +17,7 @@ class MovieController extends Controller
     {
         $movies = Movie::with('schedules')->get();
 
-        return view('welcome', [
+        return view('movie/index', [
           'movies' => $movies,
         ]);
     }
